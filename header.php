@@ -63,7 +63,7 @@
 						</div>	
 					</div>
 					<div class="modal-footer">
-						<button class="btn btn-nav" data-dismiss="modal">Close</button>
+						<button class="btn btn-nav" data-dismiss="modal">amen</button>
 					</div>
 				</div>
 			</div>
