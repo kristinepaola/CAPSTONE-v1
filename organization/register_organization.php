@@ -84,7 +84,16 @@
 		<h3 class="text-center validation">VALIDATE YOUR ORGANIZATION</h3>
 	</div>
 	<div class="row">
-		<
+		Select image to upload:
+	</div>
+	<div class="row">
+    <input type="file" name="fileToUpload" id="proofofvalidity">
+	</div>
+	<div class="row">
+    <input type="submit" value="Upload File" name="submit" class="btn btn-default">
+	</div>
+	<div class="row">
+		<input type="submit" value="Sign Up" class="btn btn-success">
 	</div>
 </div>
 </body>

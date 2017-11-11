@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+		<title>INSERT SYSTEM TITLE HERE</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/header/navigation-bar.css">
 
+		<style>
+			@font-face {
+				font-family: roboto-regular;
+				src: url(fonts/roboto/Roboto-Medium.ttf);
+				}
+		</style>
+	</head>
 
 <body>
 	<nav class="navbar navbar-fixed-top">
@@ -8,7 +22,7 @@
 		<div class="container">
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
-				<span class="glyphicon glyphicon-menu-hamburger gi-15x"></span>                   
+				<span class="glyphicon glyphicon-menu-hamburger gi-15x"></span>
 			  </button>
 			  <a class="navbar-brand" href="#">AMBOT</a>
 			</div>
@@ -35,7 +49,7 @@
 		</div>
 	  </div>
 	</nav>
-	  
+
 	  <!-- SIGN UP MODAL -->
 	  <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="signUp" >
 			<div class="modal-dialog" role="document">
@@ -50,7 +64,7 @@
 						<div class="row">
 							<div class="col-sm-8 col-sm-offset-2">
 								<button class="btn btn-reg" id="volunteer">
-									<h4><a href="#">Register as a Volunteer</a></h4> 
+									<h4><a href="#">Register as a Volunteer</a></h4>
 								</button>
 							</div>
 						</div>
@@ -60,7 +74,7 @@
 									<h4><a href="#">Register your Non Profit Organization</a></h4>
 								</button>
 							</div>
-						</div>	
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button class="btn btn-nav" data-dismiss="modal">Close</button>
@@ -69,9 +83,9 @@
 			</div>
 		</div>
 	  <!-- SIGN UP MODAL -->
-	  
-	  
-	  
+
+
+
 	  <!-- LOG IN MODAL -->
 	<div class="modal fade" tabindex="-1" role="dialog" id="logIn" aria-labelledby="gridSystemModalLabel">
 			<div class="modal-dialog" role="document">
@@ -128,20 +142,22 @@
 	  <!-- LOG IN MODAL -->
 
 </body>
-	
+
 </html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
 
-$(document).ready(function(){
-	$("#signUpBtn").on("click", function(){
-		$("#signUp").modal();
+	$(document).ready(function(){
+		$("#signUpBtn").on("click", function(){
+			$("#signUp").modal();
+		});
+
+		$("#logInBtn").on("click", function(){
+			$("#logIn").modal();
+		});
 	});
-	
-	$("#logInBtn").on("click", function(){
-		$("#logIn").modal();
-	});
-});
 
 </script>
